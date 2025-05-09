@@ -9,7 +9,7 @@ export default function MainHeader() {
         <>
             <MainHeaderBackground />
             <header className={classes.header}>
-                <Link className={classes.logo} href={'/public'}>
+                <Link className={classes.logo} href={'/'}>
                     <Image src={logoImg} alt={'logo'}/>
                     NextLevel Food
                 </Link>
@@ -19,7 +19,6 @@ export default function MainHeader() {
                         <li><Link href={'/meals/share'}>Meals share</Link></li>
                         <li><Link href={'/meals/9'}>Meals 9</Link></li>
                         <li><Link href={'/community'}>community</Link></li>
-
                     </ul>
                 </nav>
             </header>
