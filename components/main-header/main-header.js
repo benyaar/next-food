@@ -3,6 +3,7 @@ import logoImg from '@/assets/logo.png'
 import classes from './main-header.module.css'
 import Image from "next/image";
 import MainHeaderBackground from "@/components/main-header/main-header-background";
+import NavLink from "@/components/main-header/nav-link/nav-link";
 
 export default function MainHeader() {
     return (
@@ -15,10 +16,8 @@ export default function MainHeader() {
                 </Link>
                 <nav className={classes.nav}>
                     <ul>
-                        <li><Link href={'/meals'}>Meals</Link></li>
-                        <li><Link href={'/meals/share'}>Meals share</Link></li>
-                        <li><Link href={'/meals/9'}>Meals 9</Link></li>
-                        <li><Link href={'/community'}>community</Link></li>
+                        <li><NavLink href={'/meals'}>Meals</NavLink></li>
+                        <li><NavLink href={'/community'}>Community</NavLink></li>
                     </ul>
                 </nav>
             </header>
