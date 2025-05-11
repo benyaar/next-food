@@ -7,6 +7,7 @@ import MealsLoadingPage from "@/components/meals/loader/loading-part";
 
 async function Meals() {
     const meals = await getMeals()
+
     return <MealsGrid meals={meals}/>
 }
 
